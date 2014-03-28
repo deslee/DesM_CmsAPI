@@ -9,6 +9,7 @@
   "dependencies": {
     "express": "*",
     "express-jwt": "*",
+    "jsonwebtoken": "*",
     "less-middleware": "*",
     "mongoose": "*",
     "passport": "*",
