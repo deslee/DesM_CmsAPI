@@ -5,22 +5,46 @@ An ultra-hipster, Javascript CMS / framework that uses the MEAN stack ([mongodb]
 
 ### Features:
 
-![](http://i.imgur.com/RabMVaA.png)
 #### Includes [lesscss] + server-side less compiler + [semantic-ui] for a beautiful look out of the box.
+
+#### Uses JWT authentication.
+
+#### Angular powered CMS provides rich editing features.
+
+#### [Markdown] editing and processing middleware preconfigured.
+![](http://i.imgur.com/RabMVaA.png)
 
 
 ![](http://i.imgur.com/ISOqrQq.png)
-![](http://i.imgur.com/U8XjFyd.png)
+#### Includes [lesscss] + server-side less compiler + [semantic-ui] for a beautiful look out of the box.
+
 #### Uses JWT authentication.
 
-
-![](http://i.imgur.com/dZ3eURq.png)
 #### Angular powered CMS provides rich editing features.
+
+#### [Markdown] editing and processing middleware preconfigured.
+![](http://i.imgur.com/U8XjFyd.png)
+
+
+#### Includes [lesscss] + server-side less compiler + [semantic-ui] for a beautiful look out of the box.
+
+#### Uses JWT authentication.
+
+#### Angular powered CMS provides rich editing features.
+
+#### [Markdown] editing and processing middleware preconfigured.
+![](http://i.imgur.com/dZ3eURq.png)
 
 
 ![](http://i.imgur.com/47lgz74.png)
-![](http://i.imgur.com/PbamWiO.png)
+#### Includes [lesscss] + server-side less compiler + [semantic-ui] for a beautiful look out of the box.
+
+#### Uses JWT authentication.
+
+#### Angular powered CMS provides rich editing features.
+
 #### [Markdown] editing and processing middleware preconfigured.
+![](http://i.imgur.com/PbamWiO.png)
 
 ### This is still in active development, so don't use this in full production unless it's for a personal website, and you know what you're doing.
 
