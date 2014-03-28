@@ -109,11 +109,9 @@ module.exports = function(app) {
 		}
 
 		var doc = Model.in(req.body, req);
-		console.log(doc);
 		
 		Model.odm.findOneAndUpdate({slug: slug}, doc, {upsert: true}, function(err, updated) {
 			if (err) {
-				console.log('wat...');
 				console.log(err);
 				return error(res, err);
 			}
