@@ -1,7 +1,7 @@
 # DesM_CmsAPI
 A barebones, extensible CMS. Designed for developers.
 
-An ultra-hipster, Javascript CMS / framework that uses the MEAN stack ([mongodb], [nodejs], [angularjs], [expressjs]).
+An ultra-hipster, Javascript CMS / framework that uses the MEAN stack ([mongodb], [nodejs], [angularjs], [expressjs]). The node server provides a [REST]ful API, while the Angular front-end interacts with the API.
 
 #### Jump to [installation](#installation).
 
@@ -62,3 +62,4 @@ If you have an issue installing, contact me.
 [lesscss]: http://lesscss.org/
 [semantic-ui]: http://semantic-ui.com
 [Markdown]: https://daringfireball.net/projects/markdown/
+[REST]: http://en.wikipedia.org/wiki/Representational_state_transfer
