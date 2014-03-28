@@ -3,7 +3,7 @@ A barebones, extensible CMS. Designed for developers. Built for my [personal hom
 
 An ultra-simple, Javascript CMS / framework that uses the MEAN stack ([mongodb], [nodejs], [angularjs], [expressjs]). The node server provides a [REST]ful API, while the Angular front-end interacts with the API.
 
-The goal is to create a micro CMS that will serve as a example and a learning tool for greenhorn web developers. Even though the code / architecture is simple, the intention is to still provide a full featured content management system that can even be used for personal projects / small businesses.
+The goal is to create a micro CMS that will serve as an example and a learning tool for greenhorn web developers. Even though the code / architecture is simple, the intention is to still provide a full featured content management system that can even be used for personal projects / small businesses.
 
 #### Jump to [installation](#installation).
 
