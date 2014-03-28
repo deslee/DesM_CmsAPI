@@ -1,10 +1,10 @@
 # Custom minimal website framework
 
-## Some websites need to be tailored to the end user.
-Sometimes you need to make a website for a specific purpose, a specific client, or a specific workflow. 
+## Some websites need to be tailored for the end user.
+Sometimes, you need to make a website for a specific purpose, a specific client, or a specific workflow. 
 There are two possible solutions that come to mind:
 
-Install and learn the work-flow for a content management system.
+Install and use the work-flow of a content management system.
 
 or...
 
