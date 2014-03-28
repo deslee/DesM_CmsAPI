@@ -7,7 +7,7 @@ An ultra-hipster, Javascript CMS / framework that uses the MEAN stack ([mongodb]
 
 ### Features:
 
-#### Includes [lesscss] + server-side less compiler + [semantic-ui] for a beautiful look out of the box.
+#### Includes [lesscss] + server-side less compiler + [semantic-ui] for a beautiful, mobile responsive UI out of the box.
 ![](http://i.imgur.com/5O1lz8k.png)
 
 
