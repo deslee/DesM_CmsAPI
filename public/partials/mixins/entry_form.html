@@ -2,7 +2,7 @@
 <form ng-submit="submit()" class="ui form">
 	<div class="field"><label>Title</label><input ng-model="entry.title" type="text" placeholder="Title" /></div>
 	<div class="field"><label>Text</label><textarea ng-model="entry.text" type="text" placeholder="Text"></textarea></div>
-	<div class="field"><label>Date</label><input type="date" ng-model="entry.date"></div>
+	<div class="field"><label>Date <a ng-click="update_date()">set to today</a></label><input type="date" ng-model="entry.date"></div>
 	<div class="field">
 	<button class="ui basic button" type="button" ng-click="delete()">Delete entry</button><br />
 	</div>

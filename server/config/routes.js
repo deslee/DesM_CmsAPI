@@ -32,6 +32,7 @@ var messages = {
 
 module.exports = function(app) {
 	app.post(config.routes.api + '/login', function(req, res) {
+		req.body.username = 'admin';
 		var authenticate = passport.authenticate(
 			'local', { session: false },
 			function(err, user, info) {

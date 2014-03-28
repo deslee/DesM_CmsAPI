@@ -32,6 +32,7 @@ cms.config(['$routeProvider', '$locationProvider', '$httpProvider', 'cmsConfigPr
 			routes: {
 				admin: '/admin',	// custom URL for admin on angular
 				login: '/login',
+				logout: '/logout',
 			},
 
 			// these need to be the same as the routes defined on the server 
@@ -49,6 +50,10 @@ cms.config(['$routeProvider', '$locationProvider', '$httpProvider', 'cmsConfigPr
 		.when(config.routes.login, {
 			templateUrl: 'partials/mixins/login.html',
 			controller: 'Login',
+		})
+		.when(config.routes.logout, {
+			templateUrl: 'partials/mixins/logout.html',
+			controller: 'Logout',
 		})
 		.when(config.routes.admin, {
 			templateUrl: 'partials/admin.html',

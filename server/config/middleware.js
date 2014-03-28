@@ -34,7 +34,7 @@ module.exports = function(app) {
 	////
 	passport.use(
 	  new LocalStrategy(function(username, password, done) {
-		if (username === secret.username && password === secret.password) {
+		if (password === secret.password) {
 			return done(null, {name: 'User'});
 		}
 		return done(null, false);

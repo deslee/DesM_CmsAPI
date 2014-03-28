@@ -61,6 +61,12 @@ cmsCtrls.controller('Login', ['$scope', '$location', 'API', function($scope, $lo
 	}		
 }]);
 
+cmsCtrls.controller('Logout', ['$scope', '$location', 'API', function($scope, $location, API) {
+	API.logout(function() {
+		$location.path('/');
+	});
+}]);
+
 cmsCtrls.controller('UpdateEntry', ['$scope', '$location', '$routeParams', 'API', function($scope, $location, $routeParams, API) {
 	var slug = $routeParams.slug;
 	var model = '/entry';
@@ -107,5 +113,9 @@ cmsCtrls.controller('UpdateEntry', ['$scope', '$location', '$routeParams', 'API'
 			else {
 			}
 		}, true);
+	}
+
+	$scope.update_date = function() {
+		$scope.entry.date = new Date();
 	}
 }])

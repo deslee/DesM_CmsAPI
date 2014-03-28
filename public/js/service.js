@@ -51,6 +51,11 @@ cmsSrvs.service('API', ['$http', '$window', 'cmsConfig',
 			});
 		}
 
+		self.logout = function(callback) {
+			delete $window.sessionStorage.token
+			callback({api_status: 'success'});
+		}
+
 		self.logged_in = function() {
 			if($window.sessionStorage.token) {
 				return true;
@@ -59,5 +64,13 @@ cmsSrvs.service('API', ['$http', '$window', 'cmsConfig',
 				return false;
 			}
 		}
+	}
+]);
+
+cmsSrvs.run(['$rootScope', '$location', '$window', 'API', 
+	function($rootScope, $location, $window, API) {
+		$rootScope.$on('$routeChangeStart', function(event) {
+			$rootScope.logged_in = API.logged_in();
+		});
 	}
 ]);

@@ -23,4 +23,21 @@ A barebones, extensible CMS. Designed for developers.
 
 ## Todo
 
+<<<<<<< Updated upstream
 * Implement logout feature that deletes the auth token from the browser. This is crucial if user wants to log in via public computer.
+=======
+* Implement logout feature that deletes the auth token from the browser. This is crucial if user wants to log in via public computer.
+* Error message on authentication fail.
+* When the controllers take the user to the admin page, redirect back to the original page on successful authentication.
+* Write a unit test that creates, updates, and deletes an entry.
+
+[nodejs]: http://nodejs.org/
+[npm]: https://www.npmjs.org/
+[mongodb]: https://www.mongodb.org/
+[angularjs]: angularjs.org
+[expressjs]: expressjs.com/
+[lesscss]: http://lesscss.org/
+[semantic-ui]: http://semantic-ui.com
+[Markdown]: https://daringfireball.net/projects/markdown/
+[REST]: http://en.wikipedia.org/wiki/Representational_state_transfer
+>>>>>>> Stashed changes

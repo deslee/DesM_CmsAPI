@@ -22,27 +22,15 @@ Model.prototype.trim = function(data) {
     });
     return m;
 }
-////
-// outgoing model
-// if html is requested, convert to html first.
-////
 Model.prototype.out = function(data, req) {
-	var m = this.trim(data);
-	if (req.query.html && m.text) {
-		m.text = markdown.toHTML(m.text);
-	}
-	if (this.processors.out) {
-		m = this.processors.out(m);
-	}
-	return m;
+	var model = this.trim(data);
+	var process = this.processors.out;
+	return process ? process(req, model) : model;
 }
-
-////
-// incoming model. just check the data
-////
 Model.prototype.in = function(data, req) {
-    var m = this.trim(data);
-    return m;
+	var model = this.trim(data);
+	var process = this.processors.in;
+	return process ? process(req, model) : model;
 }
 
 module.exports.Entry = new Model('Entry', {
@@ -53,10 +41,17 @@ module.exports.Entry = new Model('Entry', {
 	isPost: Boolean,
 }, 
 {
-	out: function(entry) {
+	////
+	// outgoing model
+	// if html is requested, convert to html first.
+	////
+	out: function(req, entry) {
+		if (req.query.html && entry.text) {
+			entry.text = markdown.toHTML(entry.text);
+		}
 		if (entry.date) {
 			entry.sort_order = entry.date.getTime();
 		}
 		return entry;
-	}
+	},
 });

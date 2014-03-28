@@ -6,7 +6,7 @@ module.exports = {
 
 	log: false,
 
-	mongo_url: 'mongodb://localhost:27017/', // url for the mongo instance
+	mongo_url: 'mongodb://localhost:27017/cms', // url for the mongo instance
 
 	http_port: 8000,
 }
