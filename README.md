@@ -5,6 +5,8 @@ A barebones, extensible CMS. Designed for developers.
 
 ## Installation
 
+0. Get [nodejs] and [npm].
+
 1. Install all your dependencies with `sudo npm update` in your local folder.
 
 2. Install and run mongodb on your system.
@@ -12,6 +14,8 @@ A barebones, extensible CMS. Designed for developers.
 3. Check and edit this file: `server/config/secret.js`. For the `key` export, type any random string you want. Change the `password` export as well.
 
 4. Run the server with `./run.sh` from the project root directory.
+
+If you have an issue installing, contact me.
 
 ## Info
 
@@ -24,3 +28,6 @@ A barebones, extensible CMS. Designed for developers.
 ## Todo
 
 * Implement logout feature that deletes the auth token from the browser. This is crucial if user wants to log in via public computer.
+
+[nodejs]: http://nodejs.org/
+[npm]: https://www.npmjs.org/
