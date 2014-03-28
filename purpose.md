@@ -45,6 +45,16 @@ The AngularJS front-end will also have a similar design, where configuration and
 
 Currently, this core of this framework is intended to be very simple, and very easy to use. Eventually, we would like an easy way to extend this framework, to add new features. All for the purpose of tailoring the web server / client for maximum end user and developer satisfaction.
 
+## Potential use cases:
+
+### Utilizing the API
+
+You have hundreds of markdown / text / html files. You want these files to all be blog entries. You don't want to manually go through the front end interface and manually copy/paste these files. (who would?) With this system, you can write a simple shell script to recursively parse the files, generate titles / dates / tags, and make a batch API call to the server.
+
+### Rapidly extending the model / controllers
+
+You manage a portfolio for a client. She has 3D artwork uploaded to a propitiatory web service that provides embedded HTML to display the work on any website. You can easily extend the model in the server to include a field for a URL to the service, and extend the model's HTML form on the angular front-end as well. Then, in the controller file, you can extend the controller to make an API call to the service to generate the embedded HTML code to send to the angular template. This should be much faster than writing a custom plugin for a CMS.
+
 [angularjs]: http://angularjs.org/
 [mongodb]: http://mongodb.org/
 [node.js]: http://nodejs.org/
