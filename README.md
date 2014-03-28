@@ -58,7 +58,6 @@ If you have an issue installing, contact me.
 
 ## Todo
 
-* Implement logout feature that deletes the auth token from the browser. This is crucial if user wants to log in via public computer.
 * Error message on authentication fail.
 * When the controllers take the user to the admin page, redirect back to the original page on successful authentication.
 * Write a unit test that creates, updates, and deletes an entry.

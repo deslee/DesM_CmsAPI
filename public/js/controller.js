@@ -56,6 +56,7 @@ cmsCtrls.controller('Login', ['$scope', '$location', 'API', function($scope, $lo
 			if (data.api_status === 'success') {
 				$location.path('/admin');
 			} else {
+				$scope.failure = true;
 			}
 		});
 	}		
