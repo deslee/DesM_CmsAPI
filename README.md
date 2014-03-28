@@ -8,7 +8,7 @@ Jump to [installation](#installation)
 ### Features:
 
 #### Includes [lesscss] + server-side less compiler + [semantic-ui] for a beautiful look out of the box.
-![](http://i.imgur.com/RabMVaA.png)
+![](http://i.imgur.com/5O1lz8k.png)
 
 
 #### Uses JWT authentication.
@@ -22,7 +22,7 @@ Jump to [installation](#installation)
 
 #### [Markdown] editing and processing middleware preconfigured.
 ![](http://i.imgur.com/47lgz74.png)
-![](http://i.imgur.com/PbamWiO.png)
+![](http://i.imgur.com/tZwLUnh.png)
 
 ### This is still in active development, so don't use this in full production unless it's for a personal website, and you know what you're doing.
 
