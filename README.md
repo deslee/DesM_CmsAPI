@@ -30,7 +30,7 @@ An ultra-hipster, Javascript CMS / framework that uses the MEAN stack ([mongodb]
 
 0. Get [nodejs] and [npm].
 
-1. Install all your dependencies with `sudo npm update` in your local folder.
+1. Install all your dependencies with `npm update` in your local folder.
 
 2. Install and run mongodb on your system.
 
