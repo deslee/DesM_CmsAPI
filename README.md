@@ -3,6 +3,8 @@ A barebones, extensible CMS. Designed for developers.
 
 An ultra-hipster, Javascript CMS / framework that uses the MEAN stack ([mongodb], [nodejs], [angularjs], [expressjs]).
 
+Jump to [installation](#installation)
+
 ### Features:
 
 #### Includes [lesscss] + server-side less compiler + [semantic-ui] for a beautiful look out of the box.
