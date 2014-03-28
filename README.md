@@ -1,6 +1,21 @@
 # DesM_CmsAPI
 A barebones, extensible CMS. Designed for developers.
 
+An ultra-hipster, Javascript CMS / framework that uses the MEAN stack ([mongodb], [nodejs], [angularjs], [expressjs]).
+
+### Features:
+
+![http://i.imgur.com/RabMVaA.png]
+1. Includes [lesscss] + server-side less compiler + [semantic-ui] for a beautiful look out of the box.
+![http://i.imgur.com/ISOqrQq.png]
+![http://i.imgur.com/U8XjFyd.png]
+2. Uses JWT authentication (no cookies!).
+![http://i.imgur.com/dZ3eURq.png]
+3. Angular powered CMS provides rich editing features.
+![http://i.imgur.com/47lgz74.png]
+![http://i.imgur.com/PbamWiO.png]
+4. [Markdown] editing and processing middleware preconfigured.
+
 ### This is still in active development, so don't use this in full production unless it's for a personal website, and you know what you're doing.
 
 ## Installation
@@ -28,6 +43,14 @@ If you have an issue installing, contact me.
 ## Todo
 
 * Implement logout feature that deletes the auth token from the browser. This is crucial if user wants to log in via public computer.
+* Error message on authentication fail.
+* When the controllers take the user to the admin page, redirect back to the original page on successful authentication.
 
 [nodejs]: http://nodejs.org/
 [npm]: https://www.npmjs.org/
+[mongodb]: https://www.mongodb.org/
+[angularjs]: angularjs.org
+[expressjs]: expressjs.com/
+[lesscss]: http://lesscss.org/
+[semantic-ui]: http://semantic-ui.com
+[Markdown]: https://daringfireball.net/projects/markdown/
