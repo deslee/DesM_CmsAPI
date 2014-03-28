@@ -1,7 +1,9 @@
 # DesM_CmsAPI
 A barebones, extensible CMS. Designed for developers. Built for my [personal homepage](http://deslee.me).
 
-An ultra-hipster, Javascript CMS / framework that uses the MEAN stack ([mongodb], [nodejs], [angularjs], [expressjs]). The node server provides a [REST]ful API, while the Angular front-end interacts with the API.
+An ultra-simple, Javascript CMS / framework that uses the MEAN stack ([mongodb], [nodejs], [angularjs], [expressjs]). The node server provides a [REST]ful API, while the Angular front-end interacts with the API.
+
+The goal is to create a micro CMS that will serve as a example and a learning tool for greenhorn web developers. Even though the code / architecture is simple, the intention is to still provide a full featured content management system that can even be used for personal projects / small businesses.
 
 #### Jump to [installation](#installation).
 
@@ -24,7 +26,11 @@ An ultra-hipster, Javascript CMS / framework that uses the MEAN stack ([mongodb]
 ![](http://i.imgur.com/47lgz74.png)
 ![](http://i.imgur.com/tZwLUnh.png)
 
+## There will be bugs
+
 ### This is still in active development, so don't use this in full production unless it's for a personal website, and you know what you're doing.
+
+If you like the idea of this project, I invite you to fork the repo and contribute.
 
 ## Installation
 
