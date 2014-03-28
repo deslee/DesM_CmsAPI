@@ -1,5 +1,5 @@
 # DesM_CmsAPI
-A barebones, extensible CMS. Designed for developers.
+A barebones, extensible CMS. Designed for developers. Built for my [personal homepage](http://deslee.me).
 
 An ultra-hipster, Javascript CMS / framework that uses the MEAN stack ([mongodb], [nodejs], [angularjs], [expressjs]). The node server provides a [REST]ful API, while the Angular front-end interacts with the API.
 
