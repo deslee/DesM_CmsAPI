@@ -20,3 +20,7 @@ A barebones, extensible CMS. Designed for developers.
 * The `server/config` folder is generally the goto folder for making changes to the server's functionality. From now on I will refer to this folder as just `config/`.
 
 * Models are defined in `config/models.js` Currently the implemention of models is kind of clunky, but I believe the idea is good. It will need some cleanup / refactoring in the future, so the goal is to avoid complicating the architecture any further in the present.
+
+## Todo
+
+* Implement logout feature that deletes the auth token from the browser. This is crucial if user wants to log in via public computer.

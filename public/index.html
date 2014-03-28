@@ -1,0 +1,40 @@
+<!doctype html>
+<html ng-app="cms">
+	<head>
+		<title>DESM_CmsAPI</title>
+		<base href="/">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" type="text/css" href="less/stylesheet.css">
+
+		<script src="lib/jquery.js"></script>
+
+		<script src="lib/angular/angular.js"></script>
+		<script src="lib/angular/angular-animate.js"></script>
+		<script src="lib/angular/angular-cookies.js"></script>
+		<script src="lib/angular/angular-loader.js"></script>
+		<script src="lib/angular/angular-mocks.js"></script>
+		<script src="lib/angular/angular-resource.js"></script>
+		<script src="lib/angular/angular-route.js"></script>
+		<script src="lib/angular/angular-sanitize.js"></script>
+		<script src="lib/angular/angular-scenario.js"></script>
+		<script src="lib/angular/angular-touch.js"></script>
+
+		<script src="less/semantic/modules/sidebar.js"></script>
+		<script src="less/semantic/modules/behavior/form.js"></script>
+		<script src="less/semantic/modules/checkbox.js"></script>
+
+		<script src="js/constants.js"></script>
+		<script src="js/controller.js"></script>
+		<script src="js/service.js"></script>
+		<script src="js/app.js"></script>
+	</head>
+	<body>
+		<h1>
+			<a href="/">DESM_CmsAPI</a> <small>A barebones, extensible CMS. Designed for developers.</small>
+		</h1>
+		<nav ng-include src="'partials/mixins/navigation.html'"></nav>
+
+		<div ng-view class="content"></div>
+	</body>
+</html>

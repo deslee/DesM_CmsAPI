@@ -1,0 +1,41 @@
+.backgound_animation () {
+  from {
+    background-position-x: 0%;
+    background-position-y: 100%;
+  }
+
+  to {
+    background-position-x: 100%;
+    background-position-y: 0%;
+  }
+}
+
+@-webkit-keyframes backgroundmove {.backgound_animation;}
+
+@-moz-keyframes backgroundmove {.backgound_animation;}
+
+@keyframes backgroundmove {.backgound_animation;}
+
+.content.ng-enter,  {
+  .transition(0.25s ease-out all);
+  position: relative; 
+  opacity: 0;
+  top: 25px;
+}
+
+.content.ng-enter-active {
+  top: 0;
+  opacity: 1;
+}
+
+.content.ng-leave,  {
+  .transition(0.25s ease-out all);
+  position: relative; 
+  opacity: 1;
+  top: 0;
+}
+
+.content.ng-leave-active {
+  top: -25px;
+  opacity: 0;
+}

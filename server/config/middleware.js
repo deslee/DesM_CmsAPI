@@ -10,6 +10,15 @@ var path = require('path');
 module.exports = function(app) {
 	app.use(lessMiddleware(path.join(__dirname, '../../public')));
 
+
+
+	app.use(function(req, res, next) {
+		if (config.log) {
+			console.log(req.url);
+		}
+		next();
+	});
+
 	// static pages (to serve angular files)
 	app.use(express.static('../public/'));
 

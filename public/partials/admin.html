@@ -1,0 +1,11 @@
+<div ng-repeat="entry in entries">
+	<p><a href="/admin/update/{{entry.slug}}">{{entry.title}}</a></p>
+</div>
+
+<h2>Create a new entry</h2>
+<form ng-submit="new_entry()" class="ui form">
+	<div class="field">
+		<input ng-model="slug" type="text" placeholder="URL slug" />
+	</div> {{window}}
+	<input type="submit" value="Create entry" /> <span ng-if="slug">Entry URL: {{origin}}/{{slug}}</span>
+</form>

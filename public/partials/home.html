@@ -1,0 +1,12 @@
+<div ng-if="entries.length==0">
+	<h2>Welcome! You have no entries published.</h2>
+	<p>Log in by clicking on the admin link. Add new entries from there. Your published entries will be displayed here.</p>
+	<p>If you have <strong><em>any</em></strong> questions, or if there are any bugs (there probably will be) let me know through github.</p>
+	<p>I am constantly busy through school and work, so any help will be appreciated. I am only a student, so my code and architecture has a lot of room for improvement. My primary motivation of writing this framework is to improve my skills.</p>
+</div>
+<div ng-repeat="entry in entries">
+	<article class="entry" ng-if="entry.isPost">
+		<h2><a href="{{entry.slug}}">{{entry.title}}</a> <time>{{entry.date | date:"MMM d yyyy"}}</time></h2>
+		<section ng-bind-html="entry.text"></section>
+	</article>
+</div>
