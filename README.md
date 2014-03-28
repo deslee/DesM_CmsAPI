@@ -52,19 +52,10 @@ If you have an issue installing, contact me.
 
 ## Todo
 
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-* Implement logout feature that deletes the auth token from the browser. This is crucial if user wants to log in via public computer.
-=======
 * Implement logout feature that deletes the auth token from the browser. This is crucial if user wants to log in via public computer.
 * Error message on authentication fail.
 * When the controllers take the user to the admin page, redirect back to the original page on successful authentication.
 * Write a unit test that creates, updates, and deletes an entry.
-=======
-* Implement logout feature that deletes the auth token from the browser. This is crucial if user wants to log in via public computer.
-* Error message on authentication fail.
-* When the controllers take the user to the admin page, redirect back to the original page on successful authentication.
->>>>>>> master
 
 [nodejs]: http://nodejs.org/
 [npm]: https://www.npmjs.org/
@@ -75,7 +66,3 @@ If you have an issue installing, contact me.
 [semantic-ui]: http://semantic-ui.com
 [Markdown]: https://daringfireball.net/projects/markdown/
 [REST]: http://en.wikipedia.org/wiki/Representational_state_transfer
-<<<<<<< HEAD
->>>>>>> Stashed changes
-=======
->>>>>>> master
