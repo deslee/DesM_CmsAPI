@@ -45,6 +45,8 @@ If you have an issue installing, contact me.
 * For future reference, the `server` is where node/express will live. The `public` folder is where angular, along with any other public asset will live.
 
 * The `server/config` folder is generally the goto folder for making changes to the server's functionality. From now on I will refer to this folder as just `config/`.
+	
+	* `config/index` will contain the location of the mongo connection URL, as well as any other general settings (such as logging);
 
 * Models are defined in `config/models.js` Currently the implemention of models is kind of clunky, but I believe the idea is good. It will need some cleanup / refactoring in the future, so the goal is to avoid complicating the architecture any further in the present.
 
