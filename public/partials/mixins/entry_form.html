@@ -4,13 +4,13 @@
 	<div class="field"><label>Text</label><textarea ng-model="entry.text" type="text" placeholder="Text"></textarea></div>
 	<div class="field"><label>Date <a ng-click="update_date()">set to today</a></label><input type="date" ng-model="entry.date"></div>
 	<div class="field">
-	<button class="ui basic button" type="button" ng-click="delete()">Delete entry</button><br />
+	<button class="ui button" type="button" ng-click="delete()">Delete entry</button><br />
 	</div>
 	<div class="field"><div class="ui checkbox" ng-click="toggle()">
 		<input class="checkbox" type="checkbox">
 		<label>Publish? {{entry.isPost ? 'Yes' : "No"}}</label>
 	</div></div> 
-	<input class="ui basic button" type="submit" value="Submit" />
+	<input class="ui button" type="submit" value="Submit" />
 </form>
 
 <script>$('.ui.checkbox').checkbox();</script>
