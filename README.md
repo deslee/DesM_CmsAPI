@@ -5,13 +5,13 @@ An ultra-hipster, Javascript CMS / framework that uses the MEAN stack ([mongodb]
 
 ### Features:
 
-!(http://i.imgur.com/RabMVaA.png)
+![](http://i.imgur.com/RabMVaA.png)
 
 1. Includes [lesscss] + server-side less compiler + [semantic-ui] for a beautiful look out of the box.
 
 
-!(http://i.imgur.com/ISOqrQq.png)
-!(http://i.imgur.com/U8XjFyd.png)
+![](http://i.imgur.com/ISOqrQq.png)
+![](http://i.imgur.com/U8XjFyd.png)
 2. Uses JWT authentication (no cookies!).
 
 
@@ -20,8 +20,8 @@ An ultra-hipster, Javascript CMS / framework that uses the MEAN stack ([mongodb]
 3. Angular powered CMS provides rich editing features.
 
 
-!(http://i.imgur.com/47lgz74.png)
-!(http://i.imgur.com/PbamWiO.png)
+![](http://i.imgur.com/47lgz74.png)
+![](http://i.imgur.com/PbamWiO.png)
 
 4. [Markdown] editing and processing middleware preconfigured.
 
