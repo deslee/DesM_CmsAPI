@@ -11,10 +11,10 @@ An ultra-hipster, Javascript CMS / framework that uses the MEAN stack ([mongodb]
 
 ![](http://i.imgur.com/ISOqrQq.png)
 ![](http://i.imgur.com/U8XjFyd.png)
-#### Uses JWT authentication (no cookies!).
+#### Uses JWT authentication.
 
 
-!(http://i.imgur.com/dZ3eURq.png)
+![](http://i.imgur.com/dZ3eURq.png)
 #### Angular powered CMS provides rich editing features.
 
 
