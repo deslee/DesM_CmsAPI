@@ -24,8 +24,29 @@ a, a:link, a:hover, a:visited {
 	color: @darkred;
 }
 
+html {
+	height: 100%;
+	body {
+		height: 100%;
+		.page-container {
+			min-height: 100%;
+			background: #fefefe;
+			padding: 0 1em;
+
+			&:before {
+				content: '.';
+				visibility: hidden;
+				margin: 0 0 -1em;
+				display: block;
+				font-size: 1em;
+				line-height: 1em;
+			}
+		}
+	}
+}
+
 body {
-	.animated-background('img/background.png');
+	.animated-background('/img/background.png');
 	.default-type;
 	
 	width: 780px;
@@ -56,6 +77,10 @@ nav {
 		padding: .5em 1em;
 		margin-bottom: .5em;
 		display: inline-block;
+	}
+
+	.extras {
+		float: right;
 	}
 }
 
