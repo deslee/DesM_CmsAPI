@@ -62,16 +62,3 @@ cms.config(['$routeProvider', '$locationProvider', '$httpProvider', 'cmsConfigPr
 		$httpProvider.interceptors.push('authInterceptor');
 	}
 ]);
-
-cms.run(['$rootScope', '$location', '$window', 'cmsConfig', 
-	function($rootScope, $location, $window, config) {
-		$rootScope.$on('$routeChangeStart', function(event) {
-			if($location.path().substring(0,config.routes.admin.length) == config.routes.admin) {
-				if (!$window.sessionStorage.token) {
-					event.preventDefault();
-					$location.path(config.routes.login)
-				}
-			}
-		});
-	}
-]);

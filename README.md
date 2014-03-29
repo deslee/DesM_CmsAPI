@@ -58,7 +58,6 @@ If you have an issue installing, contact me.
 
 ## Todo
 
-* Error message on authentication fail.
 * When the controllers take the user to the admin page, redirect back to the original page on successful authentication.
 * Write a unit test that creates, updates, and deletes an entry.
 

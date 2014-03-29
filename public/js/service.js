@@ -67,9 +67,16 @@ cmsSrvs.service('API', ['$http', '$window', 'cmsConfig',
 	}
 ]);
 
-cmsSrvs.run(['$rootScope', '$location', '$window', 'API', 
-	function($rootScope, $location, $window, API) {
+cmsSrvs.run(['$rootScope', '$location', '$window', 'API', 'cmsConfig',
+	function($rootScope, $location, $window, API, config) {
 		$rootScope.$on('$routeChangeStart', function(event) {
+			if($location.path().substring(0,config.routes.admin.length) == config.routes.admin) {
+				if (!$window.sessionStorage.token) {
+					event.preventDefault();
+					$location.path(config.routes.login)
+				}
+			}
+			
 			$rootScope.logged_in = API.logged_in();
 		});
 	}
