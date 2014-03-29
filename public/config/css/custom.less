@@ -1,12 +1,6 @@
 @import 'fonts';
 @import 'helpers';
-@import 'animations';
 @darkred: #a33d47;
-
-.animated-background (@string) {
-	background: url(@string) fixed;
-	.animation(backgroundmove, 160s, 0, linear)
-}
 
 .default-type {
 	font-family: "Open Sans";
@@ -46,8 +40,9 @@ html {
 }
 
 body {
-	.animated-background('/img/background.png');
 	.default-type;
+	border: solid black;
+	border-width: 0 1px;
 	
 	width: 780px;
 	margin: 0 auto;
