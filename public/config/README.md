@@ -1,8 +1,8 @@
 HTML starting point is in `index.html`
 
-Partial views are in `partials/`
+Partial views are in `../partials/`
 
-CSS is called from `less/stylesheet.less`
+Custom CSS should be put in `css/custom.less`
 
 Angular app constants are stored in `config/constants.js`
 
