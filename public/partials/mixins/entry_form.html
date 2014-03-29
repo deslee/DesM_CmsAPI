@@ -1,16 +1,18 @@
 <h2>Add or update entry</h2>
-<form ng-submit="submit()" class="ui form">
-	<div class="field"><label>Title</label><input ng-model="entry.title" type="text" placeholder="Title" /></div>
-	<div class="field"><label>Text</label><textarea ng-model="entry.text" type="text" placeholder="Text"></textarea></div>
-	<div class="field"><label>Date <a ng-click="update_date()">set to today</a></label><input type="date" ng-model="entry.date"></div>
-	<div class="field">
-	<button class="ui basic button" type="button" ng-click="delete()">Delete entry</button><br />
-	</div>
-	<div class="field"><div class="ui checkbox" ng-click="toggle()">
-		<input class="checkbox" type="checkbox">
-		<label>Publish? {{entry.isPost ? 'Yes' : "No"}}</label>
-	</div></div> 
-	<input class="ui basic button" type="submit" value="Submit" />
-</form>
+<form ng-submit="submit()" class="entry-form">
 
-<script>$('.ui.checkbox').checkbox();</script>
+	<label><span>Title</span> <input ng-model="entry.title" type="text" placeholder="Title" /></label>
+
+	<label><span>Text</span> <textarea ng-model="entry.text" type="text" placeholder="Text"></textarea></label>
+
+	<label><span>Date <a ng-click="update_date()">(set to today)</a></span> <input type="date" ng-model="entry.date"></label>
+
+	<div><button type="button" ng-click="delete()">Delete entry</button></div>
+
+	<div ng-click="toggle()">
+		<label><span>Publish?  <!--debug: {{entry.isPost ? '' : ""}}--></span> 
+		<input type="checkbox"></label>
+	</div>
+
+	<div><input type="submit" value="Submit" /></div>
+</form>

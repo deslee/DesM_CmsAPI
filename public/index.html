@@ -30,11 +30,13 @@
 		<script src="js/app.js"></script>
 	</head>
 	<body>
-		<h1>
-			<a href="/">DESM_CmsAPI</a> <small>A barebones, extensible CMS. Designed for developers.</small>
-		</h1>
-		<nav ng-include src="'partials/mixins/navigation.html'"></nav>
+		<div class="page-container">
+			<h1>
+				<a href="/">DESM_CmsAPI</a> <small>A barebones, extensible CMS. Designed for developers.</small>
+			</h1>
 
-		<div ng-view class="content"></div>
+			<nav ng-include src="'partials/mixins/navigation.html'"></nav>
+			<div ng-view class="page-content"></div>
+		</div>
 	</body>
 </html>

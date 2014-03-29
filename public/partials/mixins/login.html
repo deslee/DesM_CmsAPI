@@ -1,8 +1,7 @@
 <h2>Authenticate yourself</h2>
-<form role="form" class="ui login form" ng-submit="submit()">
-	<div class="ui input">
-		<label for="login-pass" class="sr-only" >Password:</label>
-		<input id="login-pass" class="form-control" ng-model="user.password" type="password" name="pass" placeholder="Password" />
+<form role="form" class="login-form" ng-submit="submit()">
+	<div class="field">
+		<label><span>Password:</span> <input ng-model="user.password" type="password" placeholder="Password" /></label>		
 	</div>
-	<input class="btn btn-default" type="submit" value="Login" />
+	<input type="submit" value="Login" />
 </form>
