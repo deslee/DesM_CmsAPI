@@ -28,19 +28,8 @@ cms.factory('authInterceptor', ['$rootScope', '$q', '$window',
 cms.config(['$routeProvider', '$locationProvider', '$httpProvider', 'cmsConfigProvider',
 	function($routeProvider, $locationProvider, $httpProvider, cmsConfigProvider) {
 
-		var config = {
-			routes: {
-				admin: '/admin',	// custom URL for admin on angular
-				login: '/login',
-				logout: '/logout',
-			},
-
-			// these need to be the same as the routes defined on the server 
-			api: {
-				user: '/api',
-				secure: '/auth',
-			},
-		}; cmsConfigProvider.setConfig(config);
+		cmsConfigProvider.setConfig(GLOBAL_CONSTANTS);
+		var config = GLOBAL_CONSTANTS;
 
 		$routeProvider
 		.when('/', {
