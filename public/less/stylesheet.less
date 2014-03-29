@@ -1,39 +1,57 @@
 @import 'fonts';
-@import 'semantic/elements/header';
-@import 'semantic/elements/button';
-@import 'semantic/elements/image';
-@import 'semantic/elements/icon';
-@import 'semantic/elements/input';
-@import 'semantic/collections/menu';
-@import 'semantic/elements/divider';
-@import 'semantic/collections/grid';
-@import 'semantic/collections/form';
-@import 'semantic/modules/sidebar';
-@import 'semantic/modules/checkbox';
 @import 'helpers';
 @import 'animations';
+@darkred: #a33d47;
 
-body {
+.animated-background (@string) {
+	background: url(@string) fixed;
 	.animation(backgroundmove, 160s, 0, linear)
+}
+
+.default-type {
+	font-family: "Open Sans";
+	color: #3E3E3E;
+	font-size: 12px;
 }
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: "Roboto slab";
 	font-weight: 300;
 }
-@darkred: #a33d47;
+
 a, a:link, a:hover, a:visited {
 	text-decoration: none;
 	color: @darkred;
 }
 
+html {
+	height: 100%;
+	body {
+		height: 100%;
+		.page-container {
+			min-height: 100%;
+			background: #fefefe;
+			padding: 0 1em;
+
+			&:before {
+				content: '.';
+				visibility: hidden;
+				margin: 0 0 -1em;
+				display: block;
+				font-size: 1em;
+				line-height: 1em;
+			}
+		}
+	}
+}
+
 body {
-	font-family: "Open Sans";
-	background: url('/img/background.png') fixed;
+	.animated-background('/img/background.png');
+	.default-type;
+	
 	width: 780px;
 	margin: 0 auto;
-	color: #3E3E3E;
-	overflow-y: scroll;
+
 	min-height: 100%;
 
 	h1 {
@@ -52,3 +70,35 @@ body {
 		}
 	}
 }
+
+nav {
+	a {
+		border: 1px solid grey;
+		padding: .5em 1em;
+		margin-bottom: .5em;
+		display: inline-block;
+	}
+
+	.extras {
+		float: right;
+	}
+}
+
+.page-container {
+	.entry-login-link {
+		font-size: .75em;
+		text-align: right;
+	}
+}
+
+form {
+	label {
+		display: block;
+	}
+
+	textarea {
+		width: 100%;
+		height: 12em;
+	}
+}
+

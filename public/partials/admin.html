@@ -4,8 +4,10 @@
 
 <h2>Create a new entry</h2>
 <form ng-submit="new_entry()" class="ui form">
-	<div class="field">
+	<label class="field"><span>Slug</span>
 		<input ng-model="slug" type="text" placeholder="URL slug" />
-	</div> {{window}}
-	<input type="submit" class="ui button" value="Create entry" /> <span ng-if="slug">Entry URL: {{origin}}/{{slug}}</span>
+	</label>
+	<input type="submit" value="Create entry" /> <span ng-if="slug">Entry URL: {{origin}}/{{slug}}</span>
+	</label>
+	<input type="submit" value="Create entry" /> <span ng-if="slug">Entry URL: {{origin}}/{{slug}}</span>
 </form>
