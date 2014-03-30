@@ -60,6 +60,7 @@ If you have an issue installing, contact me.
 
 * When the controllers take the user to the admin page, redirect back to the original page on successful authentication.
 * Write a unit test that creates, updates, and deletes an entry.
+* Create directive for setting
 
 [nodejs]: http://nodejs.org/
 [npm]: https://www.npmjs.org/

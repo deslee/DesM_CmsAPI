@@ -11,3 +11,12 @@
 	<input type="submit" value="Create entry" /> <span ng-if="slug">Entry URL: {{origin}}/{{slug}}</span>
 	</div>
 </form>
+
+<hr>
+
+<h2>Settings</h2>
+{{settings}}
+<form ng-submit="save_settings()" class="ui form">
+	<label for-setting="title">
+	<label for-setting="auto_publish">
+</form>

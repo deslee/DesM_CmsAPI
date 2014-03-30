@@ -55,3 +55,13 @@ module.exports.Entry = new Model('Entry', {
 		return entry;
 	},
 });
+
+module.exports.Setting = new Model('Entry', {
+	name: String,
+	str: String,
+	num: Number,
+	bool: Boolean,
+}, 
+{
+	
+});

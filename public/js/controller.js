@@ -20,10 +20,13 @@ cmsCtrls.controller('Admin', ['$scope', 'API', '$sce', '$location', 'cmsConfig',
 		$scope.origin = window.location.origin;
 		API.get('/entry', function(response) {
 			if (response.api_status === 'success') {
-				$scope.entries = response.data.map(function(entry) {
-					var e = entry;
-					return e;
-				});
+				$scope.entries = response.data;
+			}
+		});
+
+		API.get('/settings', function(response) {
+			if (response.api_status === 'success') {
+				$scope.settings = response.data
 			}
 		});
 
