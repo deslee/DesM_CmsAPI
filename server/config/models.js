@@ -56,12 +56,10 @@ module.exports.Entry = new Model('Entry', {
 	},
 });
 
-module.exports.Setting = new Model('Entry', {
-	name: String,
-	str: String,
-	num: Number,
-	bool: Boolean,
+module.exports.Setting = new Model('Setting', {
+	slug: String,
+	data: Object,
 }, 
 {
-	
+
 });

@@ -3,6 +3,20 @@ var cmsCtrls = angular.module('cmsControllers', [
 	'cmsConstants',
 ]);
 
+cmsCtrls.run(['$rootScope', 'API', function($rootScope, API) {
+	API.get('/setting/main', function(response) {
+		if (response.api_status === 'success') {
+			$rootScope.main_settings = response.data;
+		}
+		if (!$rootScope.main_settings) {
+			$rootScope.main_settings = {};
+		}
+		if (!$rootScope.main_settings.slug) {
+			$rootScope.main_settings.slug = 'main'
+		}
+	});
+}])
+
 cmsCtrls.controller('Home', ['$scope', 'API', '$sce', function($scope, API, $sce) {
 	API.get('/entry?html=true', function(response) {
 		if (response.api_status === 'success') {
@@ -24,18 +38,20 @@ cmsCtrls.controller('Admin', ['$scope', 'API', '$sce', '$location', 'cmsConfig',
 			}
 		});
 
-		API.get('/settings', function(response) {
-			if (response.api_status === 'success') {
-				$scope.settings = response.data
-			}
-		});
-
 		$scope.new_entry = function() {
 			var slug = $scope.slug;
 			if (!slug) {
 				return;
 			}
 			$location.path(cmsConfig.routes.admin + '/update/' + slug);
+		}
+
+		$scope.save_settings = function(setting) {
+			API.post('/setting/' + setting.slug, setting, function(response) {
+				if (response.api_status === 'success') {
+					alert('settings saved!');
+				}
+			}, true);
 		}
 	}
 ]);
@@ -105,7 +121,6 @@ cmsCtrls.controller('UpdateEntry', ['$scope', '$location', '$routeParams', 'API'
 	}
 
 	$scope.delete = function() {
-
 		if (!$scope.entry || !confirm("Are you sure you want to delete this?")) {
 			return;
 		}

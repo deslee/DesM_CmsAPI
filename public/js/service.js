@@ -1,8 +1,8 @@
-var cmsSrvs = angular.module('cmsServices', [
+var cmsServices = angular.module('cmsServices', [
 	'cmsConstants',
 ]);
 
-cmsSrvs.service('API', ['$http', '$window', 'cmsConfig',
+cmsServices.service('API', ['$http', '$window', 'cmsConfig',
 	function($http, $window, cmsConfig) {
 		var self = this;
 
@@ -67,7 +67,7 @@ cmsSrvs.service('API', ['$http', '$window', 'cmsConfig',
 	}
 ]);
 
-cmsSrvs.run(['$rootScope', '$location', '$window', 'API', 'cmsConfig',
+cmsServices.run(['$rootScope', '$location', '$window', 'API', 'cmsConfig',
 	function($rootScope, $location, $window, API, config) {
 		$rootScope.$on('$routeChangeStart', function(event) {
 			if($location.path().substring(0,config.routes.admin.length) == config.routes.admin) {
